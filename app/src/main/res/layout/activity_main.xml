@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mainLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="0dp">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="79dp" />
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="79dp">
+
+            <LinearLayout
+                android:layout_width="475dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="332dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/earned"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="@string/Header"
+                        android:textColor="@color/purple_500"
+                        android:textSize="30dp" />
+
+                    <TextView
+                        android:id="@+id/money"
+                        android:layout_width="151dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:text=""
+                        android:textColor="@color/purple_500"
+                        android:textSize="30dp" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="8dp">
+
+            <View
+                android:id="@+id/divider"
+                android:layout_width="match_parent"
+                android:layout_height="8dp"
+                android:background="?android:attr/listDivider" />
+        </TableRow>
+
+
+        <TableRow
+
+            android:layout_width="match_parent"
+            android:layout_height="83dp"
+            android:padding="20dp">
+
+            <TextView
+                android:id="@+id/question"
+                android:layout_width="wrap_content"
+                android:layout_height="52dp"
+                android:text="which of these ships was not the three taken on colinst tea party member or someoen else?"
+                android:textSize="16dp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="147dp"
+            android:paddingTop="20dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="206dp"
+                android:orientation="vertical"
+                android:paddingLeft="120dp">
+                <RadioGroup
+                    android:id="@+id/radioGroup"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <RadioButton
+                        android:id="@+id/btn_one"
+                        android:layout_width="180dp"
+                        android:layout_height="28dp"
+                        android:text="@string/optionOne" />
+
+                <RadioButton
+                    android:id="@+id/btn_two"
+                    android:layout_width="match_parent"
+                    android:layout_height="28dp"
+                    android:text="@string/optionTwo"/>
+
+                <RadioButton
+                    android:id="@+id/btn_three"
+                    android:layout_width="match_parent"
+                    android:layout_height="28dp"
+                    android:text="@string/optionThree" />
+
+                <RadioButton
+                    android:id="@+id/btn_four"
+                    android:layout_width="match_parent"
+                    android:layout_height="28dp"
+                    android:text="@string/optionFour" />
+                </RadioGroup>
+
+            </LinearLayout>
+        </TableRow>
+
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="bottom"
+
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="83dp"
+                android:layout_gravity="bottom"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <Button
+                    android:id="@+id/btn_confirm"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="getAnswer"
+                    android:text="@string/confirm" />
+            </LinearLayout>
+
+        </TableRow>
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
