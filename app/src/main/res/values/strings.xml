@@ -1,42 +1,10 @@
 <resources>
-    <string name="app_name">PracticeOne</string>
+    <string name="app_name">Who Wants to be Millionaire</string>
     <string name="Header">You Earned : $</string>
     <string name="optionOne">Option One</string>
     <string name="optionTwo">Option Two</string>
     <string name="optionThree">Option Three</string>
     <string name="optionFour">Option Four</string>
     <string name="confirm">Confirm</string>
-    <string name="QuestionOne">How many continents are there in the world? </string>
-    <string name="q1_opt1">Five</string>
-    <string name="q1_opt2">Seven</string>
-    <string name="q1_opt3">Eight</string>
-    <string name="q1_opt4">Six</string>
-    <string name="q1_answer">Seven</string>
-    <string name="QuestionTwo">Which is the largest continent by population?</string>
-    <string name="q2_opt1">Asia</string>
-    <string name="q2_opt2">North America</string>
-    <string name="q2_opt3">Africa</string>
-    <string name="q2_opt4">Australia</string>
-    <string name="q2_answer">Asia</string>
-    <string name="QuestionThree">Which is the largest ocean in the world?</string>
-    <string name="q3_opt1">Arctic Ocean</string>
-    <string name="q3_opt2">Indian Ocean</string>
-    <string name="q3_opt3">Atlantic Ocean</string>
-    <string name="q3_opt4">Pacific Ocean</string>
-    <string name="q3_answer">Pacific Ocean</string>
-    <string name="QuestionFour">Who was the first man to step on the moon?</string>
-    <string name="q4_opt1">Spiderman</string>
-    <string name="q4_opt2">John Cena</string>
-    <string name="q4_opt3">Neil Armstrong</string>
-    <string name="q4_opt4">Albert Einstien</string>
-    <string name="q4_answer">Neil Armstrong</string>
-    <string name="QuestionFive">Who is Harry Potter? </string>
-    <string name="q5_opt1">A Magician</string>
-    <string name="q5_opt2">A Wizard</string>
-    <string name="q5_opt3">A Human</string>
-    <string name="q5_opt4">A Freelancer</string>
-    <string name="q5_answer">A Wizard</string>
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
 
 </resources>

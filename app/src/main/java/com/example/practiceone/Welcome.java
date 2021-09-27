@@ -7,33 +7,18 @@ import android.os.Bundle;
 import android.os.Handler;
 
 public class Welcome extends AppCompatActivity {
-
+    private static int SPLASH_TIME_OUT = 3000;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_welcome);
-
-        getSupportActionBar().hide();
-
-        Thread thread = new Thread(){
-
-            public void run(){
-                try {
-
-                    sleep(3000);
-                }
-                catch (Exception e){
-                    e.printStackTrace();
-                }
-                finally {
-                    Intent newIntent = new Intent(Welcome.this, MainActivity.class);
-                    startActivity(newIntent);
-                    finish();
-                }
+        new Handler().postDelayed(new Runnable() {
+            @Override
+            public void run() {
+                Intent homeIntent = new Intent(Welcome.this,MainActivity.class);
+                startActivity(homeIntent);
+                finish();
             }
-
-        };
-
-        thread.start();
+        }, SPLASH_TIME_OUT);
     }
 }

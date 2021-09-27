@@ -5,8 +5,8 @@ import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
 
 import android.content.Intent;
-import android.content.IntentFilter;
 import android.os.Bundle;
+import android.os.Handler;
 import android.view.View;
 import android.widget.Button;
 import android.widget.RadioButton;
@@ -15,6 +15,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
+
     RadioGroup radioGroup;
     Button btn_confirm;
     RadioButton radioBtnOne, radioBtnTwo,radioBtnThree,radioBtnFour, btn_select;
@@ -27,6 +28,9 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+
+
         radioGroup = findViewById(R.id.radioGroup);
         moneyEarned = findViewById(R.id.money);
         moneyEarned.setText(moneyEarned.getText() + String.valueOf(amount));
@@ -90,6 +94,7 @@ public class MainActivity extends AppCompatActivity {
         radioBtnThree.setText(quizInfo.getOption3(num));
         radioBtnFour.setText(quizInfo.getOption4(num));
         answer = quizInfo.getAnswer(num);
+        radioGroup.clearCheck();
     }
 
 
