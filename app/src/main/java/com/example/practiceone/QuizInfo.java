@@ -2,6 +2,7 @@ package com.example.practiceone;
 
 public class QuizInfo {
 
+    // Array of Quiz questions to display
     public String questionList[] = {
             "How many continents are there in the world?",
             "Which is the largest continent by population?",
@@ -10,6 +11,8 @@ public class QuizInfo {
             "How dead is the dead sea?",
             "Which one is the second closed planet to the Sun?",
             "Who is Harry Potter? " };
+
+    // Array of options for each question
     private String options[][] = {
             {"Five","Seven","Eight","Six"},
             {"Asia","North America","Africa","Australia"},
@@ -19,9 +22,11 @@ public class QuizInfo {
             {"Mars","Jupiter","Venus","Mercury"},
             {"A Megician","A Wizard","A Human","A Freelancer"} };
 
+    // Array of correct answers
     private String answers[] = {"Seven","Asia","Pacific Ocean","Neil Armstrong","Salty", "Venus" ,"A Wizard"};
 
 
+    // Setting and Getting questions and their options
     public String getQuestion(int num)
     {
         String question = questionList[num];

@@ -15,6 +15,8 @@ public class Stats extends AppCompatActivity {
 
         score = findViewById(R.id.score);
         money = findViewById(R.id.money);
+
+        // Receiving intent from MainActivity and setting data in this activity
         Intent receiverIntent = getIntent();
         int correct = receiverIntent.getIntExtra( "correct",0);
         int wrong = receiverIntent.getIntExtra( "wrong",0);
